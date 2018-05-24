@@ -1,0 +1,6 @@
+{
+  "root": "/",
+  "login": "/login",
+  "register": "/register",
+  "tasks": "/tasks"
+}

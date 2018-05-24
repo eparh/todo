@@ -1,0 +1,22 @@
+@media (max-width: @device-width), (max-height: 300px)
+{
+    .panel
+    {
+        height: 100%;
+        margin: 0;
+
+        &--main
+        {
+            min-width: initial;
+        }
+    }
+
+    .layout
+    {
+        grid-template-rows: 125px auto 40px;
+        .layout__main
+        {
+            overflow-x: auto;
+        }
+    }
+}

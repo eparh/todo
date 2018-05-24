@@ -1,0 +1,60 @@
+.form
+{
+    &__input
+    {
+        display: flex;
+        flex-direction: column;
+
+        padding-bottom: 20px;
+    }
+
+    &__error-message
+    {
+        margin-top: 5px;
+
+        color: @color-1;
+    }
+
+    &__control
+    {
+        font: 15px Arial, Helvetica, sans-serif;
+
+        padding: 14px;
+
+        border: 1px solid @color-2;
+
+        &:focus
+        {
+            border: 1px solid @color-3;
+            box-shadow: 0 0 5px @color-3;
+        }
+
+        &--invalid
+        {
+            border: 1px solid @color-1;
+            box-shadow: 0 0 5px @color-1;
+        }
+    }
+
+    &__submit-button
+    {
+        font-size: 15px;
+
+        width: 100%;
+        padding: 15px;
+
+        color: white;
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom: 2px solid @color-3;
+        border-left-style: none;
+        background: @color-3;
+
+        &:hover
+        {
+            cursor: pointer;
+
+            background: @color-4;
+        }
+    }
+}

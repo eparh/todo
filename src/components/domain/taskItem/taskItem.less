@@ -1,0 +1,55 @@
+.task-item
+{
+    list-style-type: none;
+    cursor: pointer;
+
+    border-bottom: 3px solid #ccc;
+
+    &--completed
+    {
+        text-decoration: line-through;
+
+        background: #dfe6e9;
+
+        .task-item__toggle
+        {
+            background: url('./checks.png');
+        }
+    }
+
+    .task-item__label
+    {
+        font-size: 16px;
+
+        max-width: 350px;
+        margin: 0 10px;
+        cursor: pointer;
+
+        text-align: justify;
+    }
+
+    .task-item__label-container
+    {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 5px;
+    }
+
+    .task-item__delete-icon
+    {
+        width: 24px;
+        height: 24px;
+
+        background-image: url('./delete.png');
+
+        &:hover
+        {
+            cursor: pointer;
+
+            background-image: url('./delete-hover.png');
+        }
+    }
+}

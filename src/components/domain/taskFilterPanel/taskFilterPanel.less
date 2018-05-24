@@ -1,0 +1,51 @@
+.task-filter-panel
+{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    padding: 5px;
+
+    background: #ffeaa7;
+
+    .task-filter-panel__list {
+        margin-left: 15px;
+    }
+
+    .task-filter-panel__item
+    {
+        display: inline;
+
+        list-style-type: none;
+    }
+
+    .task-filter-panel__filter
+    {
+        margin: 3px;
+        padding: 3px 7px;
+
+        cursor: pointer;
+
+        color: gray;
+
+        &:hover {
+            color: #74b9ff;
+        }
+
+        &:active {
+            color: #6c5ce7;
+        }
+    }
+
+    .task-filter-panel__delete-completed-button
+    {
+        cursor: pointer;
+
+        color: gray;
+
+        &:hover {
+            color: #74b9ff;
+        }
+    }
+}
